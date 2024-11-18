@@ -32,13 +32,15 @@ namespace Stack
 
         private void btnPop_Click(object sender, EventArgs e)
         {
-            if (top == -1)
+            if (top == -1) 
             {
                 MessageBox.Show("The stack is empty.");
                 return;
             }
 
-            top--;
+            MessageBox.Show($"Popped element: {stack[top]}");
+
+            top--; 
             DisplayStack();
         }
 
